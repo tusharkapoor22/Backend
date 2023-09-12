@@ -8,7 +8,7 @@ app.get("/", (req,res) =>{
     res.status(200).send("Hello World");
 });
 
-app.get("/api/v1/instagram", (req, res) =>{
+app.get("/api/v1/:token", (req, res) =>{
     const instaSocial = {
         username:"tusharkapoor22",
         followers:200,
@@ -17,7 +17,7 @@ app.get("/api/v1/instagram", (req, res) =>{
     };
     res.status(200).json({instaSocial});
 });
-app.get("/api/v1/facebook", (req, res) =>{
+app.get("/api/v1/:token", (req, res) =>{
     const instaSocial = {
         username:"tusharkapoorpage",
         followers:400,
@@ -26,7 +26,7 @@ app.get("/api/v1/facebook", (req, res) =>{
     };
     res.status(200).json({instaSocial});
 });
-app.get("/api/v1/linkedin", (req, res) =>{
+app.get("/api/v1/:token", (req, res) =>{
     const instaSocial = {
         username:"tusharkapoor",
         followers:20,
